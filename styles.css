@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(0, 0%, 94%);
+}
+
+.age-calculator-container{
+    background-color: #fff;
+    font-size: 2rem;
+    padding:1em;
+    border-radius: 0.5em 0.5em 3em 0.5em;
+}
+
+.age-input-container{
+    display: flex;
+    margin-bottom: 0.6em;
+    align-items: start;
+}
+
+.age-input-container .input-labels{
+    display: flex;
+    flex-direction: column;
+    margin-left:0.6em;
+}
+
+.age-input-container .input-labels label{
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:hsl(0, 1%, 44%);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.3em;
+}
+
+.age-input-container .input-labels label.error{
+    color:hsl(0, 100%, 67%);
+}
+
+.age-input-container .input-labels input{
+    width: 125px;
+    height: 55px;
+    padding:1.1em;
+    border:1px solid hsl(0, 0%, 86%);
+    border-radius: 0.3em;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.age-input-container .input-labels p{
+    color:hsl(0, 100%, 67%);
+    margin-top:0.85em;
+    font-size: 0.7rem;
+}
+
+.age-input-container .input-labels input:focus{
+    outline-color:blueviolet;
+}
+
+.age-input-container .input-labels input.error{
+    border:1px solid hsl(0, 100%, 67%); 
+}
+
+.line-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.line-btn-container hr{
+    width: 100%;
+    border:none;
+    border-top: 3px solid hsl(0, 0%, 86%);
+}
+
+.line-btn-container .arrow-button{
+    border:none;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    padding:1em;
+    cursor: pointer;
+}
+
+.line-btn-container .arrow-button:hover{
+    background-color:black;
+}
+
+.age-output-container{
+    display: flex;
+    flex-direction: column;
+    font-size: 2.9rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.age-output-container .output-labels{
+    display: flex;
+    align-items: center;
+}
+
+.age-output-container .output-labels label{
+    margin-right:0.2em;
+    color:hsl(259, 100%, 65%);
+    letter-spacing: 0.1em;
+    font-size: 4.3rem;
+}
+
+@media (max-width:596px){
+    
+    .age-calculator-container{
+        max-width: 85%;
+    }
+
+    .age-input-container .input-labels input{
+        width: 65px;
+        height: 55px;
+        font-size: 0.8rem;
+    }
+
+    .age-input-container .input-labels p{
+        margin-top:0.85em;
+        font-size: 0.5rem;
+    }
+    
+    .line-btn-container{
+        width: 265px;
+        margin:2em auto;
+        position:relative;
+    }
+
+    .line-btn-container .arrow-button{
+        padding:0.5em;
+        position: absolute;
+    }
+
+    .line-btn-container .arrow-button img{
+        width: 45px;
+    }
+    
+    .age-output-container{
+        font-size: 1.9rem;
+        
+    }
+
+    .age-output-container .output-labels label{
+        font-size: 2.75rem;
+    }
+
+}

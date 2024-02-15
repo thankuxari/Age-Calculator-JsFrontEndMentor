@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="age-calculator-container">
+    <div class="age-input-container">
+        <div class="input-labels" id="input-labels-day">
+          <label for="dayInput" id="dayLabel">Day</label>
+          <input placeholder="DD" id="dayInput">
+        </div>
+        
+        <div class="input-labels" id="input-labels-month">
+          <label for="monthInput" id="monthLabel">Month</label>
+          <input placeholder="MM" id="monthInput">
+        </div>
+        
+        <div class="input-labels" id="input-labels-year">
+          <label for="yearInput" id="yearLabel">Year</label>
+          <input placeholder="YYYY" id="yearInput">  
+        </div>
+    </div>
+    <div class="line-btn-container">
+      <hr class="age-input-line">
+      <button class="arrow-button" id="buttonArrow"><img src="assets/images/icon-arrow.svg" alt=""></button>
+    </div>
+    <div class="age-output-container">
+      <div class="output-labels">
+        <label id="yearOutput">--</label>
+        <h2>years</h2>
+      </div>
+
+      <div class="output-labels">
+        <label id="monthsOutput">--</label>
+        <h2>months</h2>
+      </div>
+
+      <div class="output-labels">
+        <label id="daysOutput">--</label>
+        <h2>days</h2>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
